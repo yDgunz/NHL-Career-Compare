@@ -57,17 +57,21 @@ const getStats = (statsFromApi : any) : Stats => {
 const getPlayerStats = async (playerId: number) : Promise<Player> => {
 	var apiResponse = await axios.get(`https://statsapi.web.nhl.com/api/v1/people/${playerId}?expand=person.stats&stats=yearByYear,yearByYearPlayoffs,careerRegularSeason,careerPlayoffs`);
 	
-	var playerDemographics = apiResponse.data.people[0];
+	var playerData = apiResponse.data.people[0];
 	
 	var player : Player = {
 		id: playerId,
-		name: playerDemographics.fullName,
-		number: playerDemographics.primaryNumber,
-		birthDate: playerDemographics.birthDate,
-		country: playerDemographics.nationality,
-		shoots: playerDemographics.shootsCatches,	
-		careerStats: getStats(apiResponse.data.people[0].stats[2].splits[0].stat),
-		careerPlayoffStats: getStats(apiResponse.data.people[0].stats[3].splits[0].stat),
+		name: playerData.fullName,
+		number: playerData.primaryNumber,
+		birthDate: playerData.birthDate,
+		country: playerData.nationality,
+		shoots: playerData.shootsCatches,	
+		careerStats: getStats(playerData.stats[2].splits[0].stat),
+		careerPlayoffStats: playerData.stats[3].splits [0] !== undefined ? 
+								getStats(playerData.stats[3].splits[0].stat) :
+								{
+									games: 0, points: 0, goals: 0, assists: 0, period: "", adjustedAssists: 0, adjustedGoals: 0, adjustedPoints: 0, pim: 0, plusMinus: 0, shots: 0
+								},							
 		seasonStats: [],
 		playoffStats: []
 	};

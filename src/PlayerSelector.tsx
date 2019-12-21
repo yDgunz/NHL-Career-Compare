@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import AsyncSelect from 'react-select/async';
 import axios from 'axios';
+import * as players from './players.json';
 
 interface State {
   inputValue: string
@@ -10,19 +11,16 @@ interface Props {
 	updatePlayers: Function
 }
 
-const getPlayers = (search : string, callback : Function) => {
-	axios.get(`https://suggest.svc.nhl.com/svc/suggest/v1/minplayers/${search}/20`).then((response) => {
-		
-		var options = response.data.suggestions.map((player : any) => {
-			var playerData = player.split('|');
-			return {
-				value: playerData[0],
-				label: `${playerData[2]} ${playerData[1]}`
-			}
-		});
-
-		callback(options);
-	});	
+const getPlayers = (search : string, callback : Function) => {	
+	if (search.length < 2) {
+		return callback([]);
+	} else {
+		search = search.toLowerCase();
+		var foundPlayers = players.players.filter((x) => (x.name.toLowerCase().indexOf(search) > -1));
+		foundPlayers.splice(10);
+		callback(foundPlayers.map((x : any) => ({value: x.id, label: x.name})));
+	}
+	
 }
 
 export default class PlayerSelector extends Component<Props, State> {
