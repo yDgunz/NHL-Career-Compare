@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "be86bc1aaa4e3b859b5094be12d39eb5",
+    "revision": "891dba6369f4700420fb6697128c8931",
     "url": "/NHL-Career-Compare/index.html"
   },
   {
-    "revision": "cd939cf457596a3f3ad1",
+    "revision": "6f1b4837a0a9781a08a9",
     "url": "/NHL-Career-Compare/static/css/main.1d670e5c.chunk.css"
   },
   {
-    "revision": "fbacd64bab9c582188a7",
-    "url": "/NHL-Career-Compare/static/js/2.a37e6458.chunk.js"
+    "revision": "7b0ee108bc67cc37b558",
+    "url": "/NHL-Career-Compare/static/js/2.bf9228c2.chunk.js"
   },
   {
     "revision": "99536655968f93988cef9883129659bb",
-    "url": "/NHL-Career-Compare/static/js/2.a37e6458.chunk.js.LICENSE"
+    "url": "/NHL-Career-Compare/static/js/2.bf9228c2.chunk.js.LICENSE"
   },
   {
-    "revision": "cd939cf457596a3f3ad1",
-    "url": "/NHL-Career-Compare/static/js/main.dfcb4f6a.chunk.js"
+    "revision": "6f1b4837a0a9781a08a9",
+    "url": "/NHL-Career-Compare/static/js/main.347de66a.chunk.js"
   },
   {
     "revision": "c31167d396e4b0d16b3c",

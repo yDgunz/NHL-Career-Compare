@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/NHL-Career-Compare/static/css/main.1d670e5c.chunk.css",
-    "main.js": "/NHL-Career-Compare/static/js/main.dfcb4f6a.chunk.js",
-    "main.js.map": "/NHL-Career-Compare/static/js/main.dfcb4f6a.chunk.js.map",
+    "main.js": "/NHL-Career-Compare/static/js/main.347de66a.chunk.js",
+    "main.js.map": "/NHL-Career-Compare/static/js/main.347de66a.chunk.js.map",
     "runtime-main.js": "/NHL-Career-Compare/static/js/runtime-main.1076b534.js",
     "runtime-main.js.map": "/NHL-Career-Compare/static/js/runtime-main.1076b534.js.map",
-    "static/js/2.a37e6458.chunk.js": "/NHL-Career-Compare/static/js/2.a37e6458.chunk.js",
-    "static/js/2.a37e6458.chunk.js.map": "/NHL-Career-Compare/static/js/2.a37e6458.chunk.js.map",
+    "static/js/2.bf9228c2.chunk.js": "/NHL-Career-Compare/static/js/2.bf9228c2.chunk.js",
+    "static/js/2.bf9228c2.chunk.js.map": "/NHL-Career-Compare/static/js/2.bf9228c2.chunk.js.map",
     "index.html": "/NHL-Career-Compare/index.html",
-    "precache-manifest.f7e189f91c61f01624622725e93edd30.js": "/NHL-Career-Compare/precache-manifest.f7e189f91c61f01624622725e93edd30.js",
+    "precache-manifest.8c04e4cbdb45b32c8837dde34aeeacfd.js": "/NHL-Career-Compare/precache-manifest.8c04e4cbdb45b32c8837dde34aeeacfd.js",
     "service-worker.js": "/NHL-Career-Compare/service-worker.js",
     "static/css/main.1d670e5c.chunk.css.map": "/NHL-Career-Compare/static/css/main.1d670e5c.chunk.css.map",
-    "static/js/2.a37e6458.chunk.js.LICENSE": "/NHL-Career-Compare/static/js/2.a37e6458.chunk.js.LICENSE"
+    "static/js/2.bf9228c2.chunk.js.LICENSE": "/NHL-Career-Compare/static/js/2.bf9228c2.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.1076b534.js",
-    "static/js/2.a37e6458.chunk.js",
+    "static/js/2.bf9228c2.chunk.js",
     "static/css/main.1d670e5c.chunk.css",
-    "static/js/main.dfcb4f6a.chunk.js"
+    "static/js/main.347de66a.chunk.js"
   ]
 }
