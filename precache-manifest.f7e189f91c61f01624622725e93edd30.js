@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "32263eecc803bcfc67554a6b8ac58e73",
+    "revision": "be86bc1aaa4e3b859b5094be12d39eb5",
     "url": "/NHL-Career-Compare/index.html"
   },
   {

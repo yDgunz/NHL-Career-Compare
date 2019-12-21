@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/NHL-Career-Compare/precache-manifest.ac1f4629b1107ba183853cc38a130431.js"
+  "/NHL-Career-Compare/precache-manifest.f7e189f91c61f01624622725e93edd30.js"
 );
 
 self.addEventListener('message', (event) => {
